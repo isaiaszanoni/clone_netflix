@@ -1,0 +1,202 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Elementos base */
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.titulo {
+    margin: 8% 5%;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 7px;
+}
+
+.titulo-perfis {
+    margin-top: 60px;
+    color: white;
+    font-size: 46px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.perfis .container .arrasta {
+    display: flexbox;
+    align-items: center;
+    margin-left: 22%;
+    margin-top: 20px;
+}
+
+.perfil{
+    list-style-type: none;
+    display: flex;
+    margin: 16px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.perfis img{
+    display: flex;
+    max-width: 130px;
+    height: 130px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+
+}
+
+.lista-perfis ul{
+    margin: auto;
+    border: 1px solid red;
+}
+.lista-perfis li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.perfis .perfil a{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: grey;
+
+}
+
+.perfis .perfil a:hover {
+    color: white;
+}
+
+.perfis .perfil .nome-perfil {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.lista-perfis img:hover {
+    border: 2px solid white;
+}
+
+.gerenciar-perfis {
+    color: grey;
+    border: 1px solid grey;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+}
+
+.gerenciar-perfis:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+.botao-gerenciar {
+    margin: auto;
+    margin-top: 50px;
+    height: 50px;
+    width: 238px;
+    display: block;
+}
